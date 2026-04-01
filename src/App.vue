@@ -448,7 +448,7 @@ export default {
     display: block;
     position: absolute;
     inset: 0;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.7);
     opacity: 0;
     transition: opacity 0.3s ease;
   }
@@ -466,7 +466,7 @@ export default {
     flex-direction: column;
     align-items: flex-start;
     gap: 4px;
-    background: rgba(10, 18, 40, 0.98);
+    background: #0a0f2e;
     border-radius: 0;
     border: none;
     width: 280px;
@@ -474,6 +474,7 @@ export default {
     height: 100%;
     padding: 20px 16px;
     backdrop-filter: none;
+    box-shadow: 4px 0 24px rgba(0, 0, 0, 0.4);
   }
 
   .app-nav.nav-open .nav-panel {
@@ -485,10 +486,19 @@ export default {
     padding: 14px 16px;
     font-size: 16px;
     border-radius: 12px;
+    color: rgba(255, 255, 255, 0.9);
+    background: transparent;
+  }
+
+  .app-nav-item:hover {
+    background: rgba(255, 255, 255, 0.08);
+    color: #fff;
   }
 
   .app-nav-item.active {
-    background: rgba(22, 119, 255, 0.2);
+    background: rgba(22, 119, 255, 0.35);
+    color: #fff;
+    box-shadow: inset 0 0 0 1px rgba(22, 119, 255, 0.5);
   }
 
   .nav-dot {
