@@ -475,6 +475,7 @@ export default {
     padding: 20px 16px;
     backdrop-filter: none;
     box-shadow: 4px 0 24px rgba(0, 0, 0, 0.4);
+    overflow-y: auto;
   }
 
   .app-nav.nav-open .nav-panel {
@@ -486,19 +487,24 @@ export default {
     padding: 14px 16px;
     font-size: 16px;
     border-radius: 12px;
-    color: rgba(255, 255, 255, 0.9);
-    background: transparent;
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    margin-bottom: 4px;
+    backdrop-filter: blur(8px);
   }
 
   .app-nav-item:hover {
-    background: rgba(255, 255, 255, 0.08);
-    color: #fff;
+    background: rgba(22, 119, 255, 0.25);
+    border-color: rgba(22, 119, 255, 0.4);
+    color: #ffffff;
   }
 
   .app-nav-item.active {
-    background: rgba(22, 119, 255, 0.35);
-    color: #fff;
-    box-shadow: inset 0 0 0 1px rgba(22, 119, 255, 0.5);
+    background: rgba(22, 119, 255, 0.4);
+    color: #ffffff;
+    border-color: rgba(22, 119, 255, 0.6);
+    box-shadow: 0 0 12px rgba(22, 119, 255, 0.3);
   }
 
   .nav-dot {
