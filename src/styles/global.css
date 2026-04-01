@@ -1,0 +1,39 @@
+html,
+body,
+#app {
+  margin: 0;
+  min-height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", sans-serif;
+  color: #0f172a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #f5f7fb;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.ant-layout {
+  background: transparent;
+}
+
+.ant-card-body {
+  padding: 24px;
+}
+
+.ant-drawer-body {
+  background: #fff;
+}
+
+@media (max-width: 640px) {
+  .ant-card-body {
+    padding: 18px;
+  }
+}
