@@ -471,7 +471,8 @@ export default {
     border: none;
     width: 100vw;
     max-width: 100vw;
-    height: 100%;
+    height: calc(100vh - 60px);
+    min-height: calc(100dvh - 60px);
     padding: 16px 14px calc(20px + env(safe-area-inset-bottom));
     backdrop-filter: none;
     box-shadow: 4px 0 24px rgba(0, 0, 0, 0.4);
