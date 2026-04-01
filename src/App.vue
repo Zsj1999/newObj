@@ -435,7 +435,7 @@ export default {
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: 99;
+    z-index: 120;
     justify-content: flex-start;
     pointer-events: none;
   }
@@ -469,10 +469,10 @@ export default {
     background: #0a0f2e;
     border-radius: 0;
     border: none;
-    width: 280px;
-    max-width: 80vw;
+    width: 100vw;
+    max-width: 100vw;
     height: 100%;
-    padding: 20px 16px;
+    padding: 16px 14px calc(20px + env(safe-area-inset-bottom));
     backdrop-filter: none;
     box-shadow: 4px 0 24px rgba(0, 0, 0, 0.4);
     overflow-y: auto;
@@ -484,14 +484,18 @@ export default {
 
   .app-nav-item {
     width: 100%;
-    padding: 14px 16px;
-    font-size: 16px;
+    padding: 13px 14px;
+    font-size: 15px;
     border-radius: 12px;
     color: #ffffff;
-    background: rgba(255, 255, 255, 0.06);
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.12);
     margin-bottom: 4px;
     backdrop-filter: blur(8px);
+  }
+
+  .nav-label {
+    flex: 1;
   }
 
   .app-nav-item:hover {
