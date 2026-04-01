@@ -514,6 +514,10 @@ export default {
       else if (type === "feature") this.toggleFeature(value);
       this.page = 1;
     },
+    toggleFavoritesOnly() {
+      this.showFavoritesOnly = !this.showFavoritesOnly;
+      this.page = 1;
+    },
     resetPagination() {
       this.page = 1;
     },
